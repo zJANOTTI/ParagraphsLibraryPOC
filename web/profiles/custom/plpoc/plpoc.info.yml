@@ -1,6 +1,6 @@
-name: Profile Name
+name: Paragraphs Library POC
 type: profile
-description: 'Description of your profile.'
+description:
 core_version_requirement: '^8.8 || ^9 || ^10'
 
 # Optional: Declare your installation profile as a distribution
@@ -8,7 +8,7 @@ core_version_requirement: '^8.8 || ^9 || ^10'
 # The distribution_name property is used in the installer and other places as
 # a label for the software being installed.
 distribution:
-  name: Distribution Name
+  name: PLPOC
   # If you want your distribution to pre-select a language you can specify
   # the language code, as well. This will prevent the user from selecting
   # a language code in the user interface. While not recommended for generic
@@ -35,6 +35,7 @@ install:
   - config
   - comment
   - contextual
+  - ckeditor
   - contact
   - quickedit
   - help
@@ -48,6 +49,7 @@ install:
   - toolbar
   - field_ui
   - file
+  - filter
   - media
   - media_library
   - paragraphs
